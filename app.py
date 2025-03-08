@@ -79,13 +79,18 @@ elif st.session_state.page == "Project 1: Soul Knight Prequel Discord Bot":
     - AI Chatbot: Integrated an AI-driven chatbot to engage users in dynamic conversations and provide assistance.
     
     Challenges and Solutions:
-    - Limited Server Access: Lacked administrative privileges on the hosting server, necessitating reliance on external APIs and modules to perform tasks requiring root access.
+    - Limited Server Access: The hosting server lacked administrative privileges, necessitating reliance on external APIs and modules to perform tasks requiring root access.
     - Scalability Concerns: Ensured the bot could handle the growing user base, implementing optimizations to maintain performance.
     - User Engagement: Continuously updated the bot's features based on user feedback to enhance engagement and satisfaction.
 
 
 
-    From this project, I gained insights into project management, user-centred design, and the importance of community feedback in iterative development. I plan to introduce new features such as real-time game analytics, multilingual support, and deeper AI integrations to further enrich user experience.
+    Since the bot was deployed on one server, I could closely monitor user interactions and gather feedback more easily. This allowed me to tailor features to the specific needs of the community. As the user base grew, the focus shifted toward optimizing performance, ensuring the bot was responsive even with an increasing number of commands and interactions. Continuous testing and improvements were crucial to maintaining smooth operations.
+    Having the bot in a single server meant I could engage with the community more directly. Feedback and suggestions from users could be integrated more quickly, helping refine the bot's features. The close-knit nature of the community allowed for faster iteration and adjustments, whether it was for new game information, achievements, or chatbot interactions. The challenge was ensuring that changes made to accommodate a growing user base didn't disrupt the established experience for long-time members.
+    Despite not having administrative access to the server, I had to be resourceful with the tools available. Using external APIs and modules for certain tasks required creative problem-solving, especially since I couldn’t implement more advanced solutions that needed server-level permissions. This pushed me to think outside the box and find workarounds that would allow the bot to function optimally without compromising its capabilities.
+    With only one server to focus on, I could more easily monitor performance and reliability. However, as the user base grew, I needed to ensure that the bot continued to run smoothly without overwhelming the server resources. This highlighted the importance of load balancing, efficient coding practices, and proactive error handling.
+    The project allowed me to build meaningful relationships with the community, offering valuable learning experiences about user expectations and how to foster engagement over time. Interacting with a dedicated group of users helped me improve the bot's functionality while also contributing to a stronger sense of community within the server. This experience taught me the importance of maintaining open communication channels and transparency with users.
+    By working within one server, I delivered a highly personalized and optimized experience, which was a key takeaway from this project.
     """)
 
 # Project 2: Web App with Flask Page (Detailed Information)
