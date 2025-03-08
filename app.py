@@ -101,6 +101,7 @@ elif st.session_state.page == "Project 2: Portfolio Website":
     - Projects display
 
     Sort of rushed this out but yeah
+    """)
     
     
 
