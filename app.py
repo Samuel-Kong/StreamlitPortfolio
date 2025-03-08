@@ -27,8 +27,7 @@ st.title("Welcome to My Portfolio!")
 if st.session_state.page == "Home":
     st.header("About Me")
     st.write("""
-    Hello! I'm a passionate developer with expertise in Python, cybersecurity, data manipulation, and machine learning.
-    Below are some of the projects I've worked on:
+    Hello! I'm a passionate developer with expertise in Python, cybersecurity, data manipulation, and machine learning. I do phtography, read manga, watch anime and play games like Minecraft and CoDM in my free time.
     """)
 
     st.image("images/306_SamuelKong.png", caption="That's me!", width=200)
@@ -41,13 +40,13 @@ elif st.session_state.page == "Projects":
     """)
 
     # Buttons for individual projects
-    project1_button = st.button("Project 1: Data Analysis")
+    project1_button = st.button("Project 1: Soul Knight Prequel Discord Bot")
     project2_button = st.button("Project 2: Web App with Flask")
     project3_button = st.button("Project 3: Machine Learning")
 
     # Navigate to Project 1 Page
     if project1_button:
-        st.session_state.page = "Project 1: Data Analysis"
+        st.session_state.page = "Project 1: Soul Knight Prequel Discord Bot"
 
     # Navigate to Project 2 Page
     if project2_button:
@@ -58,37 +57,36 @@ elif st.session_state.page == "Projects":
         st.session_state.page = "Project 3: Machine Learning"
 
 # Project 1: Data Analysis Page (Detailed Information)
-elif st.session_state.page == "Project 1: Data Analysis":
-    st.header("Project 1: Data Analysis with Python")
+elif st.session_state.page == "Project 1: Soul Knight Prequel Discord Bot":
+    st.header("Project 1: Development of a Disnake Discord Bot for a 60,000+ Member Soul Knight Prequel Community")
     st.write("""
-    This project involves using Python and libraries like Pandas and Matplotlib to analyze and visualize a dataset.
-    The goal was to extract meaningful insights from the dataset and create visual representations of the data.
-
+    Objective: Designed to provide readily accessible game information, link game achievements to Discord profiles, facilitate moderation, and serve as an AI chatbot to enhance user engagement within the Soul Knight Prequel Discord community.
+    Duration: A comprehensive project spanning approximately 2-3 years, with continuous updates and improvements post-deployment.
     Tools used:
-    - Pandas for data manipulation.
-    - Matplotlib for data visualization.
+    - Python: Utilized for backend development, leveraging the Disnake library for seamless Discord integration.
+    - Disnake Library: Provided an async-ready API wrapper for Discord, facilitating efficient bot operations. 
+    - DOCS.DISNAKE.DEV
+    - Pillow: Employed for image processing tasks, enhancing visual content delivery.
+    - Google Gemini API: Integrated to enrich bot functionalities with advanced AI capabilities.
+    - JSON: Used for data storage and configuration, ensuring structured data management.
+    - Sparked Hosting Service: Chosen for reliable hosting, supporting the bot's operational demands.
+    - OCR Space: Incorporated for optical character recognition tasks, expanding the bot's utility.
+
+    Features (including but not limited to):
+    - Game Information Access: Provided users with up-to-date game details, guides, and news within the Discord server.
+    - Achievement Linking: Enabled synchronization of in-game achievements with Discord profiles, fostering community recognition.
+    - Moderation Tools: Developed features to assist moderators in maintaining community standards and managing user interactions.
+    - AI Chatbot: Integrated an AI-driven chatbot to engage users in dynamic conversations and provide assistance.
+    
+    Challenges and Solutions:
+    - Limited Server Access: Lacked administrative privileges on the hosting server, necessitating reliance on external APIs and modules to perform tasks requiring root access.
+    - Scalability Concerns: Ensured the bot could handle the growing user base, implementing optimizations to maintain performance.
+    - User Engagement: Continuously updated the bot's features based on user feedback to enhance engagement and satisfaction.
+
+
+
+    From this project, I gained insights into project management, user-centred design, and the importance of community feedback in iterative development. I plan to introduce new features such as real-time game analytics, multilingual support, and deeper AI integrations to further enrich user experience.
     """)
-
-    # Sample code for Project 1
-    code = '''import pandas as pd
-import matplotlib.pyplot as plt
-
-# Load Data
-data = pd.read_csv('dataset.csv')
-
-# Simple analysis
-summary = data.describe()
-print(summary)
-
-# Visualize data
-data.plot(kind='line', x='Date', y='Value')
-plt.show()
-'''
-    st.subheader("Sample Code for Data Analysis")
-    st.code(code, language='python')
-
-    # Add an image or plot related to the project
-    st.image("images/project1_analysis.png", caption="Data Analysis Visualization", width=600)
 
 # Project 2: Web App with Flask Page (Detailed Information)
 elif st.session_state.page == "Project 2: Web App with Flask":
