@@ -17,10 +17,10 @@ page = st.selectbox(
 if page == "Home":
     st.header("About Me")
     st.write("""
-    Hello! I'm a passionate developer with expertise in Python, Data Science, Web Development, and Machine Learning. Below are some of the projects I've worked on:
+    Hello! I'm a passionate developer with expertise in Python, cybersecurity, data manipulation, and machine learning. Below are some of the projects I've worked on:
     """)
 
-    st.image("images/profile_picture.png", caption="That's me!", width=200)
+    st.image("images/306_SamuelKong.png", caption="That's me!", width=200)
 
 # Project 1: Data Analysis Page
 elif page == "Project 1: Data Analysis":
