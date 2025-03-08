@@ -29,7 +29,7 @@ if st.session_state.page == "Home":
     st.write("""
     Hello! I'm Kong Le Xin Samuel, a passionate developer with expertise in Python, cybersecurity, data manipulation, and machine learning. I take photographs, read manga, watch anime, and play games like Minecraft and CoDM in my free time.
     \n
-    Connect with me on Discord! Username: entity8o8
+    Connect with me on Discord! Username: entity8o8\n
     Send me an email at konglexinsamuel@gmail.com
     """)
 
