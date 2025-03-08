@@ -1,38 +1,38 @@
 import streamlit as st
 
-# Set page config
+
 st.set_page_config(page_title="My Portfolio", page_icon="💻", layout="wide")
 
-# Check if session state already has a page set
+
 if "page" not in st.session_state:
     st.session_state.page = "Home"
 
-# Sidebar Navigation with Buttons
+
 st.sidebar.title("Portfolio Navigation")
 
-# Create buttons for navigation
+
 home_button = st.sidebar.button("Home")
 projects_button = st.sidebar.button("Projects")
 
-# Update page state based on button clicks
+
 if home_button:
     st.session_state.page = "Home"
 elif projects_button:
     st.session_state.page = "Projects"
 
-# Header for Portfolio
+
 st.title("Welcome to My Portfolio!")
 
-# Home Page Content
+
 if st.session_state.page == "Home":
     st.header("About Me")
     st.write("""
-    Hello! I'm a passionate developer with expertise in Python, cybersecurity, data manipulation, and machine learning. I do phtography, read manga, watch anime and play games like Minecraft and CoDM in my free time.
+    Hello! I'm Kong Le Xin Samuel, a passionate developer with expertise in Python, cybersecurity, data manipulation, and machine learning. I do photography, read manga, watch anime and play games like Minecraft and CoDM in my free time.
     """)
 
     st.image("images/306_SamuelKong.png", caption="That's me!", width=200)
 
-# Projects Page: List all projects with brief summaries and buttons to each project
+
 elif st.session_state.page == "Projects":
     st.header("My Projects")
     st.write("""
