@@ -100,7 +100,8 @@ elif st.session_state.page == "Project 2: Portfolio Website":
     - Images display
     - Projects display
 
-    Sort of rushed this out but yeah
+    Sort of rushed this out but yeah\n
+    You can see the code here: https://github.com/Samuel-Kong/StreamlitPortfolio
     """)
     
     
