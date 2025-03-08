@@ -102,7 +102,15 @@ elif st.session_state.page == "Project 2: Portfolio Website":
     - Images display
     - Projects display
 
-    Sort of rushed this out but yeah\n
+    I started by outlining the structure of my portfolio. I wanted it to be simple yet informative, with sections dedicated to who I am, my skills, and my projects. The projects section was a critical part of the design, as I wanted it to showcase my work clearly and concisely. I included buttons that would take users to different pages for each project to keep everything clean and prevent information overload.\n
+    I chose **Streamlit** for this project because it's an easy and fast way to create interactive web applications, particularly useful for data science and personal projects. While not traditionally used for building complex websites, Streamlit is great for a personal portfolio site when you want to showcase specific projects or technical skills. It allowed me to quickly create the necessary functionality for navigation and content display with minimal effort.\n
+    One of the challenges I faced was handling page navigation. I initially had issues with buttons redirecting to the wrong pages, often returning me to the home page instead of the project pages. This was because Streamlit's built-in widgets like `st.button()` don’t naturally retain state across interactions. To fix this, I utilized `st.session_state`, which allowed me to preserve the current page and improve navigation.\n
+    The process of debugging and implementing state management was a valuable learning experience. I was forced to think about how to handle different states across multiple pages, something that is crucial in building any dynamic website.\n
+    I focused on creating a clean and minimalistic design. Streamlit offers flexibility in layout, but I wanted to avoid making the site overly complex. I added a sidebar to make the site easier to navigate, as it allowed me to keep the main content area focused on the current project or information. This layout also makes the website feel organized and user-friendly.
+    \n
+    For the actual content, I included descriptions, images, and code snippets that could convey the essence of each project. This balance between technical details and visual appeal was key to creating a portfolio that was both informative and visually appealing.
+    \n
+    Building this portfolio website was a fulfilling project that allowed me to showcase my skills and reflect on the technical journey I’ve been on. It reinforced my understanding of web development while also serving as a personal project I can continue to improve over time. This portfolio will serve as both a tool for future job applications and a reminder of the progress I’ve made as a developer.\n
     You can see the code here: https://github.com/Samuel-Kong/StreamlitPortfolio
     """)
     
