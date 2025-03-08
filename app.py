@@ -3,6 +3,10 @@ import streamlit as st
 # Set page config
 st.set_page_config(page_title="My Portfolio", page_icon=":guardsman:", layout="wide")
 
+# Check if session state already has a page set
+if "page" not in st.session_state:
+    st.session_state.page = "Home"
+
 # Sidebar Navigation with Buttons
 st.sidebar.title("Portfolio Navigation")
 
@@ -10,20 +14,17 @@ st.sidebar.title("Portfolio Navigation")
 home_button = st.sidebar.button("Home")
 projects_button = st.sidebar.button("Projects")
 
-# Default page is "Home"
-page = "Home"
-
-# Check which button was clicked
+# Update page state based on button clicks
 if home_button:
-    page = "Home"
+    st.session_state.page = "Home"
 elif projects_button:
-    page = "Projects"
+    st.session_state.page = "Projects"
 
 # Header for Portfolio
 st.title("Welcome to My Portfolio!")
 
 # Home Page Content
-if page == "Home":
+if st.session_state.page == "Home":
     st.header("About Me")
     st.write("""
     Hello! I'm a passionate developer with expertise in Python, cybersecurity, data manipulation, and machine learning.
@@ -33,7 +34,7 @@ if page == "Home":
     st.image("images/306_SamuelKong.png", caption="That's me!", width=200)
 
 # Projects Page: List all projects with brief summaries and buttons to each project
-elif page == "Projects":
+elif st.session_state.page == "Projects":
     st.header("My Projects")
     st.write("""
     Here are some of the exciting projects I've worked on. Click on a project to learn more!
@@ -44,38 +45,20 @@ elif page == "Projects":
     project2_button = st.button("Project 2: Web App with Flask")
     project3_button = st.button("Project 3: Machine Learning")
 
-    # Project 1: Data Analysis Brief Summary
+    # Navigate to Project 1 Page
     if project1_button:
-        st.write("""
-        **Project 1: Data Analysis with Python**
-        - This project involves using Python, Pandas, and Matplotlib to analyze and visualize data.
-        - Extracting meaningful insights and creating visual representations of the data.
-        (Click below for more details on the Data Analysis project.)
-        """)
-        st.button("Go to Data Analysis Project")
+        st.session_state.page = "Project 1: Data Analysis"
 
-    # Project 2: Web App with Flask Brief Summary
+    # Navigate to Project 2 Page
     if project2_button:
-        st.write("""
-        **Project 2: Full-Stack Web App with Flask**
-        - A web app built with Flask, HTML, CSS, and JavaScript to manage user data.
-        - The app interacts with a backend to display dynamic content.
-        (Click below for more details on the Flask Web App project.)
-        """)
-        st.button("Go to Web App with Flask Project")
+        st.session_state.page = "Project 2: Web App with Flask"
 
-    # Project 3: Machine Learning Brief Summary
+    # Navigate to Project 3 Page
     if project3_button:
-        st.write("""
-        **Project 3: Machine Learning Model**
-        - Built a machine learning model to predict housing prices using scikit-learn.
-        - Evaluating the model with accuracy metrics and predicting housing prices based on input features.
-        (Click below for more details on the Machine Learning project.)
-        """)
-        st.button("Go to Machine Learning Project")
+        st.session_state.page = "Project 3: Machine Learning"
 
 # Project 1: Data Analysis Page (Detailed Information)
-elif page == "Project 1: Data Analysis":
+elif st.session_state.page == "Project 1: Data Analysis":
     st.header("Project 1: Data Analysis with Python")
     st.write("""
     This project involves using Python and libraries like Pandas and Matplotlib to analyze and visualize a dataset.
@@ -108,7 +91,7 @@ plt.show()
     st.image("images/project1_analysis.png", caption="Data Analysis Visualization", width=600)
 
 # Project 2: Web App with Flask Page (Detailed Information)
-elif page == "Project 2: Web App with Flask":
+elif st.session_state.page == "Project 2: Web App with Flask":
     st.header("Project 2: Full-Stack Web App with Flask")
     st.write("""
     This full-stack web application was built using Flask, HTML, CSS, and JavaScript.
@@ -138,7 +121,7 @@ if __name__ == '__main__':
     st.image("images/project2_flask.png", caption="Flask Web App Screenshot", width=600)
 
 # Project 3: Machine Learning Page (Detailed Information)
-elif page == "Project 3: Machine Learning":
+elif st.session_state.page == "Project 3: Machine Learning":
     st.header("Project 3: Machine Learning Model")
     st.write("""
     In this project, I created a machine learning model to predict housing prices using scikit-learn.
