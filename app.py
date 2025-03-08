@@ -60,8 +60,8 @@ elif st.session_state.page == "Projects":
 elif st.session_state.page == "Project 1: Soul Knight Prequel Discord Bot":
     st.header("Project 1: Development of a Disnake Discord Bot for a 60,000+ Member Soul Knight Prequel Community")
     st.write("""
-    Objective: Designed to provide readily accessible game information, link game achievements to Discord profiles, facilitate moderation, and serve as an AI chatbot to enhance user engagement within the Soul Knight Prequel Discord community.
-    Duration: A comprehensive project spanning approximately 2-3 years, with continuous updates and improvements post-deployment.
+    Objective: Designed to provide readily accessible game information, link game achievements to Discord profiles, facilitate moderation, and serve as an AI chatbot to enhance user engagement within the Soul Knight Prequel Discord community.\n
+    Duration: A comprehensive project spanning approximately 2-3 years, with continuous updates and improvements post-deployment.\n
     Tools used:
     - Python: Utilized for backend development, leveraging the Disnake library for seamless Discord integration.
     - Disnake Library: Provided an async-ready API wrapper for Discord, facilitating efficient bot operations. 
