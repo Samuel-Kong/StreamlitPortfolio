@@ -42,17 +42,16 @@ elif st.session_state.page == "Projects":
     Here are some of the exciting projects I've worked on. Click on a project to learn more!
     """)
 
-    # Buttons for individual projects
+
     project1_button = st.button("Project 1: Soul Knight Prequel Discord Bot")
     project2_button = st.button("Project 2: Portfolio Website")
 
-    # Navigate to Project 1 Page
+
     if project1_button:
         st.session_state.page = "Project 1: Soul Knight Prequel Discord Bot"
     if project2_button:
         st.session_state.page = "Project 2: Portfolio Website"
 
-# Project 1: Data Analysis Page (Detailed Information)
 elif st.session_state.page == "Project 1: Soul Knight Prequel Discord Bot":
     st.header("Project 1: Development of a Disnake Discord Bot for a 60,000+ Member Soul Knight Prequel Community")
     st.write("""
