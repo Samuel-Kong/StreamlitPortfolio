@@ -1,7 +1,7 @@
 import streamlit as st
 
 # Set page config
-st.set_page_config(page_title="My Portfolio", page_icon=":guardsman:", layout="wide")
+st.set_page_config(page_title="My Portfolio", page_icon="💻", layout="wide")
 
 # Check if session state already has a page set
 if "page" not in st.session_state:
