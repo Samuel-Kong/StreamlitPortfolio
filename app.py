@@ -3,12 +3,27 @@ import streamlit as st
 # Set page config
 st.set_page_config(page_title="My Portfolio", page_icon=":guardsman:", layout="wide")
 
-# Sidebar Navigation
+# Sidebar Navigation with Buttons
 st.sidebar.title("Portfolio Navigation")
-page = st.sidebar.radio(
-    "Select a Project",
-    ["Home", "Project 1: Data Analysis", "Project 2: Web App with Flask", "Project 3: Machine Learning"]
-)
+
+# Create buttons for navigation
+home_button = st.sidebar.button("Home")
+project1_button = st.sidebar.button("Project 1: Data Analysis")
+project2_button = st.sidebar.button("Project 2: Web App with Flask")
+project3_button = st.sidebar.button("Project 3: Machine Learning")
+
+# Default page is "Home"
+page = "Home"
+
+# Check which button was clicked
+if home_button:
+    page = "Home"
+elif project1_button:
+    page = "Project 1: Data Analysis"
+elif project2_button:
+    page = "Project 2: Web App with Flask"
+elif project3_button:
+    page = "Project 3: Machine Learning"
 
 # Header for Portfolio
 st.title("Welcome to My Portfolio!")
