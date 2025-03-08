@@ -83,7 +83,7 @@ elif st.session_state.page == "Project 1: Soul Knight Prequel Discord Bot":
     - Scalability Concerns: Ensured the bot could handle the growing user base, implementing optimizations to maintain performance.
     - User Engagement: Continuously updated the bot's features based on user feedback to enhance engagement and satisfaction.
 
-
+    You can join the Discord server using this link: https://discord.gg/soulknightprequel
 
     Since the bot was deployed on one server, I could closely monitor user interactions and gather feedback more easily. This allowed me to tailor features to the specific needs of the community. As the user base grew, the focus shifted toward optimizing performance, ensuring the bot was responsive even with an increasing number of commands and interactions. Continuous testing and improvements were crucial to maintaining smooth operations.
     Having the bot in a single server meant I could engage with the community more directly. Feedback and suggestions from users could be integrated more quickly, helping refine the bot's features. The close-knit nature of the community allowed for faster iteration and adjustments, whether it was for new game information, achievements, or chatbot interactions. The challenge was ensuring that changes made to accommodate a growing user base didn't disrupt the established experience for long-time members.
