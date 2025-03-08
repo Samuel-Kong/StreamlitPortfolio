@@ -41,10 +41,13 @@ elif st.session_state.page == "Projects":
 
     # Buttons for individual projects
     project1_button = st.button("Project 1: Soul Knight Prequel Discord Bot")
+    project2_button = st.button("Project 2: Portfolio Website")
 
     # Navigate to Project 1 Page
     if project1_button:
         st.session_state.page = "Project 1: Soul Knight Prequel Discord Bot"
+    if project2_button:
+        st.session_state.page = "Project 2: Portfolio Website"
 
 # Project 1: Data Analysis Page (Detailed Information)
 elif st.session_state.page == "Project 1: Soul Knight Prequel Discord Bot":
@@ -83,4 +86,21 @@ elif st.session_state.page == "Project 1: Soul Knight Prequel Discord Bot":
     By working within one server, I delivered a highly personalized and optimized experience, which was a key takeaway from this project.\n\n
     I would upload the code here but there are too many files due to it being built modularly
     """)
+elif st.session_state.page == "Project 2: Portfolio Website":
+    st.header("Project 1: Development of a Portfolio Website using Streamlit")
+    st.write("""
+    Objective: To make a website that allows people to view my projects\n
+    Duration: Around 10 minutes\n
+    Tools Used:
+    - Python
+    - Streamlit
+    - Streamlit Cloud (For hosting)
+    - Github (To store code)
+    Features:
+    - Images display
+    - Projects display
+
+    Sort of rushed this out but yeah
+    
+    
 
